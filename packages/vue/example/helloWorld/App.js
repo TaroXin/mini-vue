@@ -1,6 +1,6 @@
 import { h, ref } from "../../dist/mini-vue.esm-bundler.js";
 
-const count = ref(0);
+const count = ref(10);
 
 const HelloWorld = {
   name: "HelloWorld",
