@@ -9,14 +9,13 @@
 //   },
 // };
 
-
 // 复杂一点
-// template 包含 element 和 interpolation 
+// template 包含 element 和 interpolation
 export default {
-  template: `<p>{{msg}}</p>`,
+  template: '<p>{{msg}}</p>',
   setup() {
     return {
-      msg: "vue3 - compiler",
-    };
+      msg: 'vue3 - compiler',
+    }
   },
-};
+}

@@ -1,24 +1,24 @@
-import { h, ref, reactive } from "../../dist/mini-vue.esm-bundler.js";
+import { h, reactive, ref } from '../../dist/mini-vue.esm-bundler.js'
 export default {
-  name: "Child",
+  name: 'Child',
   setup(props, { emit }) {},
   render(proxy) {
     const self = this
-    return h("div", {}, [
+    return h('div', {}, [
       h(
-        "button",
+        'button',
         {
           onClick() {
-            console.log(proxy);
-            console.log("click");
-            proxy.$emit("change", "aaa", "bbbb");
+            console.log(proxy)
+            console.log('click')
+            proxy.$emit('change', 'aaa', 'bbbb')
             // 使用 this
             console.log(this)
-            self.$emit("change", "ccc", "ddd");
+            self.$emit('change', 'ccc', 'ddd')
           },
         },
-        "emit"
+        'emit',
       ),
-    ]);
+    ])
   },
-};
+}

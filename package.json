@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "rollup -c -w",
     "build": "rollup -c",
-    "test": "vitest"
+    "test": "vitest",
+    "fix": "eslint --fix packages"
   },
   "author": "cuixiaorui",
   "homepage": "https://github.com/cuixiaorui",
@@ -17,7 +18,7 @@
     "@rollup/plugin-node-resolve": "^8.4.0",
     "@rollup/plugin-replace": "^2.4.2",
     "@rollup/plugin-typescript": "^8.5.0",
-    "@taroxin/eslint-config": "^0.2.3",
+    "@taroxin/eslint-config": "^0.2.5",
     "eslint": "^8.31.0",
     "rollup": "^2.79.1",
     "rollup-plugin-sourcemaps": "^0.6.3",

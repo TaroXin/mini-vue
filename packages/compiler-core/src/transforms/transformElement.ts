@@ -1,4 +1,4 @@
-import { createVNodeCall, NodeTypes } from "../ast";
+import { NodeTypes, createVNodeCall } from '../ast'
 
 export function transformElement(node, context) {
   if (node.type === NodeTypes.ELEMENT) {
@@ -7,15 +7,15 @@ export function transformElement(node, context) {
 
       // TODO
       // 需要把之前的 props 和 children 等一系列的数据都处理
-      const vnodeTag = `'${node.tag}'`;
+      const vnodeTag = `'${node.tag}'`
       // TODO props 暂时不支持
-      const vnodeProps = null;
-      let vnodeChildren = null;
+      const vnodeProps = null
+      let vnodeChildren = null
       if (node.children.length > 0) {
         if (node.children.length === 1) {
           // 只有一个孩子节点 ，那么当生成 render 函数的时候就不用 [] 包裹
-          const child = node.children[0];
-          vnodeChildren = child;
+          const child = node.children[0]
+          vnodeChildren = child
         }
       }
 
@@ -24,8 +24,8 @@ export function transformElement(node, context) {
         context,
         vnodeTag,
         vnodeProps,
-        vnodeChildren
-      );
-    };
+        vnodeChildren,
+      )
+    }
   }
 }

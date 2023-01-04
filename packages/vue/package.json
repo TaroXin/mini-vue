@@ -2,14 +2,14 @@
   "name": "mini-vue",
   "version": "1.0.0",
   "description": "",
+  "author": "cuixiaorui",
+  "license": "ISC",
+  "keywords": [],
   "main": "index.js",
   "scripts": {
     "test": "cypress open",
     "serve": "serve ."
   },
-  "keywords": [],
-  "author": "cuixiaorui",
-  "license": "ISC",
   "dependencies": {
     "@mini-vue/compiler-core": "workspace:^1.0.0",
     "@mini-vue/runtime-dom": "workspace:^1.0.0",

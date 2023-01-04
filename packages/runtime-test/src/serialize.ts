@@ -1,24 +1,23 @@
 // 把 node 给序列化
 // 测试的时候好对比
 
-import { NodeTypes } from "./nodeOps";
+import { NodeTypes } from './nodeOps'
 
 // 序列化： 把一个对象给处理成 string （进行流化）
 export function serialize(node) {
-  if (node.type === NodeTypes.ELEMENT) {
-    return serializeElement(node);
-  } else {
-    return serializeText(node);
-  }
+  if (node.type === NodeTypes.ELEMENT)
+    return serializeElement(node)
+  else
+    return serializeText(node)
 }
 
 function serializeText(node) {
-  return node.text;
+  return node.text
 }
 
 export function serializeInner(node) {
   // 把所有节点变成一个string
-  return node.children.map((c) => serialize(c)).join(``);
+  return node.children.map(c => serialize(c)).join('')
 }
 
 function serializeElement(node) {
@@ -29,18 +28,18 @@ function serializeElement(node) {
   // 不然的话返回 key = value（这里的值需要字符串化）
   const props = Object.keys(node.props)
     .map((key) => {
-      const value = node.props[key];
+      const value = node.props[key]
       return value == null
-        ? ``
-        : value === ``
-        ? key
-        : `${key}=${JSON.stringify(value)}`;
+        ? ''
+        : value === ''
+          ? key
+          : `${key}=${JSON.stringify(value)}`
     })
     .filter(Boolean)
-    .join(" ");
+    .join(' ')
 
-  console.log("node---------", node.children);
-  return `<${node.tag}${props ? ` ${props}` : ``}>${serializeInner(node)}</${
+  console.log('node---------', node.children)
+  return `<${node.tag}${props ? ` ${props}` : ''}>${serializeInner(node)}</${
     node.tag
-  }>`;
+  }>`
 }

@@ -8,7 +8,7 @@ importers:
       '@rollup/plugin-node-resolve': ^8.4.0
       '@rollup/plugin-replace': ^2.4.2
       '@rollup/plugin-typescript': ^8.5.0
-      '@taroxin/eslint-config': ^0.2.3
+      '@taroxin/eslint-config': ^0.2.5
       '@vue/reactivity': ^3.2.45
       eslint: ^8.31.0
       pixi.js: ^6.5.8
@@ -25,7 +25,7 @@ importers:
       '@rollup/plugin-node-resolve': 8.4.0_rollup@2.79.1
       '@rollup/plugin-replace': 2.4.2_rollup@2.79.1
       '@rollup/plugin-typescript': 8.5.0_sbiskyiysxhldmns7rmnvoiszu
-      '@taroxin/eslint-config': 0.2.3_iukboom6ndih5an6iafl45j2fe
+      '@taroxin/eslint-config': 0.2.5_iukboom6ndih5an6iafl45j2fe
       eslint: 8.31.0
       rollup: 2.79.1
       rollup-plugin-sourcemaps: 0.6.3_rollup@2.79.1
@@ -716,8 +716,8 @@ packages:
       rollup: 2.79.1
     dev: true
 
-  /@taroxin/eslint-config-basic/0.2.3_k73wpmdolxikpyqun3p36akaaq:
-    resolution: {integrity: sha512-uDBAMnCAVG7lwNs5BxowcthvURYgOjQSe7UNOBcVb8mI6vP4yQGoMS1Tl38qFhkCZhwb0ltUBSln97qzmyGsVw==}
+  /@taroxin/eslint-config-basic/0.2.5_k73wpmdolxikpyqun3p36akaaq:
+    resolution: {integrity: sha512-p0ZR7EWH0isfziJoCaWDJiI9h5k1I1DjHltyEJe0eULVIswhVzoRG7AmD19FD79syjqqXTMPmzmu1M3ETt0CJQ==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
@@ -730,7 +730,7 @@ packages:
       eslint-plugin-n: 15.6.0_eslint@8.31.0
       eslint-plugin-no-only-tests: 3.1.0
       eslint-plugin-promise: 6.1.1_eslint@8.31.0
-      eslint-plugin-taroxin: 0.2.3_iukboom6ndih5an6iafl45j2fe
+      eslint-plugin-taroxin: 0.2.5_iukboom6ndih5an6iafl45j2fe
       eslint-plugin-unicorn: 45.0.2_eslint@8.31.0
       eslint-plugin-yml: 1.4.0_eslint@8.31.0
       jsonc-eslint-parser: 2.1.0
@@ -743,13 +743,13 @@ packages:
       - typescript
     dev: true
 
-  /@taroxin/eslint-config-ts/0.2.3_iukboom6ndih5an6iafl45j2fe:
-    resolution: {integrity: sha512-+zffIZA/wzxIeKAeBvtkRZqTkZYubhPxLFn0uCniWlBo30BfHd/HQA+eWj2T2MtwmQjG012p3MbMAzJWP8sUrw==}
+  /@taroxin/eslint-config-ts/0.2.5_iukboom6ndih5an6iafl45j2fe:
+    resolution: {integrity: sha512-J+q+nq+09M0am+nwF1epUodXCUVmMwP80tiFHBTtQkM5B34pCYG8xYONdHkNQ1oO2AmGwrz8rBLkfWsOoxtuHw==}
     peerDependencies:
       eslint: '>=7.4.0'
       typescript: '>=3.9'
     dependencies:
-      '@taroxin/eslint-config-basic': 0.2.3_k73wpmdolxikpyqun3p36akaaq
+      '@taroxin/eslint-config-basic': 0.2.5_k73wpmdolxikpyqun3p36akaaq
       '@typescript-eslint/eslint-plugin': 5.48.0_k73wpmdolxikpyqun3p36akaaq
       '@typescript-eslint/parser': 5.48.0_iukboom6ndih5an6iafl45j2fe
       eslint: 8.31.0
@@ -762,13 +762,13 @@ packages:
       - supports-color
     dev: true
 
-  /@taroxin/eslint-config-vue/0.2.3_k73wpmdolxikpyqun3p36akaaq:
-    resolution: {integrity: sha512-oAhc3MqlhtDW1JK/tcIs1WriMHI9vCipMuK1xGacEBuyCf4xGpLbHMLjr1y7jz3O8RSgE07zgzyMyt9XBvjwwQ==}
+  /@taroxin/eslint-config-vue/0.2.5_k73wpmdolxikpyqun3p36akaaq:
+    resolution: {integrity: sha512-B4B+HTWFfZU5Fe1yQj+IXeCyCdI/bsoSLazuvDxJdnWJErZh29FE16XaEsABWnzcjY811Il7xskk/2vmjuHHFA==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
-      '@taroxin/eslint-config-basic': 0.2.3_k73wpmdolxikpyqun3p36akaaq
-      '@taroxin/eslint-config-ts': 0.2.3_iukboom6ndih5an6iafl45j2fe
+      '@taroxin/eslint-config-basic': 0.2.5_k73wpmdolxikpyqun3p36akaaq
+      '@taroxin/eslint-config-ts': 0.2.5_iukboom6ndih5an6iafl45j2fe
       eslint: 8.31.0
       eslint-plugin-vue: 9.8.0_eslint@8.31.0
       local-pkg: 0.4.2
@@ -781,12 +781,12 @@ packages:
       - typescript
     dev: true
 
-  /@taroxin/eslint-config/0.2.3_iukboom6ndih5an6iafl45j2fe:
-    resolution: {integrity: sha512-7SpktMPb9OZHPd1AklCSUWl2xKPKMkwLaHyisTryFjnBZ3eJ4PuKnyZHWA+8dbZW70W7FzpAIcg/T2G0v4/p3g==}
+  /@taroxin/eslint-config/0.2.5_iukboom6ndih5an6iafl45j2fe:
+    resolution: {integrity: sha512-E1k3nbUZJi1nsSJkbiBKEujvySdJMvKe+wlPqsFTmasMrhEujqYS1EX/JyBbT2FJzlSjhdIH7MkPnwyA+vhprQ==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
-      '@taroxin/eslint-config-vue': 0.2.3_k73wpmdolxikpyqun3p36akaaq
+      '@taroxin/eslint-config-vue': 0.2.5_k73wpmdolxikpyqun3p36akaaq
       '@typescript-eslint/eslint-plugin': 5.48.0_k73wpmdolxikpyqun3p36akaaq
       '@typescript-eslint/parser': 5.48.0_iukboom6ndih5an6iafl45j2fe
       eslint: 8.31.0
@@ -1808,8 +1808,8 @@ packages:
       eslint: 8.31.0
     dev: true
 
-  /eslint-plugin-taroxin/0.2.3_iukboom6ndih5an6iafl45j2fe:
-    resolution: {integrity: sha512-Ht0kh/CySdyIPhikUSoEKdfTaxrfuLX8owMw23XtuzBxks7h+Idqdozu1L4UR8m1CjozicS7lPLhxJHez4wHUQ==}
+  /eslint-plugin-taroxin/0.2.5_iukboom6ndih5an6iafl45j2fe:
+    resolution: {integrity: sha512-mTgWf4jaZQSdB5WSAujhmgNFVX/79JIeTGVBbZ+HL3jeM9LsogTiEkwIpxyIosUM496aBfAuG98C9w8x/KujTw==}
     dependencies:
       '@typescript-eslint/utils': 5.48.0_iukboom6ndih5an6iafl45j2fe
     transitivePeerDependencies:

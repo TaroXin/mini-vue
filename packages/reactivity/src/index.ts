@@ -5,10 +5,10 @@ export {
   isReadonly,
   isReactive,
   isProxy,
-} from "./reactive";
+} from './reactive'
 
-export { ref, proxyRefs, unRef, isRef } from "./ref";
+export { ref, proxyRefs, unRef, isRef } from './ref'
 
-export { effect, stop, ReactiveEffect } from "./effect";
+export { effect, stop, ReactiveEffect } from './effect'
 
-export { computed } from "./computed";
+export { computed } from './computed'

@@ -1,9 +1,9 @@
 export const enum NodeTypes {
-  ELEMENT = "element",
-  TEXT = "TEXT",
+  ELEMENT = 'element',
+  TEXT = 'TEXT',
 }
 
-let nodeId = 0;
+let nodeId = 0
 // 这个函数会在 runtime-core 初始化 element 的时候调用
 function createElement(tag: string) {
   // 如果是基于 dom 的话 那么这里会返回 dom 元素
@@ -16,18 +16,18 @@ function createElement(tag: string) {
     props: {},
     children: [],
     parentNode: null,
-  };
+  }
 
-  return node;
+  return node
 }
 
 function insert(child, parent) {
-  parent.children.push(child);
-  child.parentNode = parent;
+  parent.children.push(child)
+  child.parentNode = parent
 }
 
 function parentNode(node) {
-  return node.parentNode;
+  return node.parentNode
 }
 
 function setElementText(el, text) {
@@ -38,7 +38,7 @@ function setElementText(el, text) {
       text,
       parentNode: el,
     },
-  ];
+  ]
 }
 
-export const nodeOps = { createElement, insert, parentNode, setElementText };
+export const nodeOps = { createElement, insert, parentNode, setElementText }

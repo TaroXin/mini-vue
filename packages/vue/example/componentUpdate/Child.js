@@ -1,8 +1,8 @@
-import { h, ref, reactive } from "../../dist/mini-vue.esm-bundler.js";
+import { h, reactive, ref } from '../../dist/mini-vue.esm-bundler.js'
 export default {
-  name: "Child",
+  name: 'Child',
   setup(props, { emit }) {},
   render(proxy) {
-    return h("div", {}, [h("div", {}, "child" + this.$props.msg)]);
+    return h('div', {}, [h('div', {}, `child${this.$props.msg}`)])
   },
-};
+}

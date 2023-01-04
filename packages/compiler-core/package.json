@@ -2,12 +2,12 @@
   "name": "@mini-vue/compiler-core",
   "version": "1.0.0",
   "description": "@mini-vue/compiler-core",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@mini-vue/shared": "workspace:^1.0.0"
   }
